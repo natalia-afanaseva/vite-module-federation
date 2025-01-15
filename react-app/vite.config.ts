@@ -12,6 +12,7 @@ export default defineConfig({
       filename: "remoteEntry.js",
       exposes: {
         "./Navbar": "./src/components/renderNavbar.tsx",
+        "./Card": "./src/components/renderCard.tsx",
       },
       shared: {
         react: { requiredVersion: dependencies.react, singleton: true },
