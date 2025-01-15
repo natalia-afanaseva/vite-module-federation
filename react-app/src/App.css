@@ -43,3 +43,8 @@ nav div {
   font-weight: bold;
   font-size: x-large;
 }
+
+h2,
+p {
+  margin: 0;
+}

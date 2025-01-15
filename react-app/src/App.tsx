@@ -1,7 +1,8 @@
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Card from "./components/Card";
+import { Routes, Route } from "react-router";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
 
 function App() {
   return (
@@ -9,11 +10,10 @@ function App() {
       <div>
         <Navbar />
         <main className="container">
-          <Card
-            img={reactLogo}
-            title="A React logo"
-            description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis cumque dignissimos beatae sapiente quisquam, voluptatem explicabo!"
-          />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Products />} />
+          </Routes>
         </main>
       </div>
     </>
