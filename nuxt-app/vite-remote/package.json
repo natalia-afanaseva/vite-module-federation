@@ -1,0 +1,19 @@
+{
+  "name": "vite-remote",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build",
+    "vmf": "npx http-server dist -p 3000 -c-1 --cors"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0"
+  }
+}
